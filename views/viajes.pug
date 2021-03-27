@@ -1,0 +1,10 @@
+//- Para extender la master page se usa la palabra extends seguido de la ruta de la master page, después se usa la palabra block seguido del nombre asignado del
+//- archivo padre
+extends ./layout/index.pug
+block contenido
+    h1.mt-5.text-center #{pagina}
+    main.container.mt-5 
+        include ./layout/bloque_viajes
+        
+
+        

@@ -1,0 +1,30 @@
+//- Para extender la master page se usa la palabra extends seguido de la ruta de la master page, después se usa la palabra block seguido del nombre asignado del
+//- archivo padre
+extends ./layout/index.pug
+block contenido
+    main.container.mt-5 
+        .row 
+            .col-md-5 
+                img(src="img/nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+            .col-md-7 
+                h1 #{pagina}
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ex arcu, condimentum semper cursus ut, mattis nec purus. Ut auctor mattis justo vitae rutrum. Curabitur non orci quis nibh rhoncus facilisis at non justo. Vivamus semper pharetra nisl, id vestibulum arcu lacinia et. Praesent id pharetra lorem, eu aliquet lorem.  
+
+                p Donec et sem vel augue tempor feugiat at dictum eros. Nulla consectetur egestas tellus et ornare. Donec faucibus, dui nec fringilla aliquet, odio dui mollis dui, hendrerit imperdiet dolor libero at tellus. Integer nec ante et libero vehicula volutpat. Proin fringilla enim at ipsum mollis semper.
+
+                p Gravida consequat mattis. Nulla sed augue diam. Morbi elementum, nibh a ullamcorper lacinia, nisi nisl ullamcorper elit, convallis volutpat felis tortor vel nulla. Praesent in diam convallis, laoreet nibh id, viverra purus. Suspendisse potenti. 
+    .listado-iconos 
+        .container.mt-5.py-5.text-center 
+            .row 
+                .col-md-4 
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, sunt dolor illum inventore obcaecati, repellat magnam fuga natus perspiciatis er.
+                .col-md-4 
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Los mejores Destinos
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, sunt dolor illum inventore obcaecati, repellat magnam fuga natus perspiciatis er.
+                .col-md-4 
+                    img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")
+                    h2.mb-4 Los mejores Precios
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, sunt dolor illum inventore obcaecati, repellat magnam fuga natus perspiciatis er.

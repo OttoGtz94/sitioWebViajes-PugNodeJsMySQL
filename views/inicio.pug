@@ -1,0 +1,29 @@
+//- Para extender la master page se usa la palabra extends seguido de la ruta de la master page, después se usa la palabra block seguido del nombre asignado del
+//- archivo padre
+extends ./layout/index.pug
+block slider
+    .slider 
+        h1 Rio de Janeiro 
+        em aventura
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros 
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec diam est, euismod commodo tellus eu, pretium bibendum ligula. Curabitur dapibus ipsum et eros vehicula sagittis nec vitae metus. Suspendisse leo metus.
+                p Etiam diam massa, elementum varius tincidunt vitae, sollicitudin vitae ipsum. Integer molestie pharetra ante, sed consectetur ipsum sollicitudin ac. Fusce sit amet elit aliquet risus dictum tincidunt id sit amet neque. 
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+        include ./layout/bloque_viajes
+    .descuento 
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada 
+                        p.fecha 20 de Mayo de 2021 - 17 de Junio de 2021
+                        p.precio $25000
+    .container 
+        h2.mt-5.text-center Testimoniales 
+            include ./layout/bloque_testimoniales

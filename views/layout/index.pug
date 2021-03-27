@@ -1,0 +1,19 @@
+
+//- Para recibir una variable se pone la etiqueta seguido de un igual y el nombre de la variable h1= nombreVariable o la etiqueta espacio #{nombreVariable}
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{nombreSitio} | #{pagina}
+        link(rel="stylesheet", href="/css/bootstrap.css")
+        link(rel="stylesheet", href="/css/style.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Staatliches&display=swap")
+    body(class= clase) 
+        include ./header.pug
+        //-  para agregar elementos de otro archivo se usa la palabra block seguido de un nombre, este nombre se agrega en el archivo hijo
+        block slider
+        block contenido 
+        include ./footer.pug
+        
